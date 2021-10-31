@@ -29,6 +29,7 @@ buildPythonApplication rec {
     description = "Python Framework for network data analytics";
     homepage = "https://github.com/nfstream/nfstream";
     license = licenses.lgpl3;
+    broken = true;
     maintainers = with maintainers; [ heph2 ];
   };
 }
