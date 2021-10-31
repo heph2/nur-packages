@@ -14,6 +14,10 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  ### DEVELOPMENT
+  nfstream = pkgs.callPackage ./pkgs/nfstream { };
+
+  ### APPLICATION
   atlas = pkgs.callPackage ./pkgs/atlas { };
   logisim-evolution = pkgs.callPackage ./pkgs/logisim-evolution { };
 }
