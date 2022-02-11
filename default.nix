@@ -16,6 +16,7 @@
 
   ### DEVELOPMENT
   #nfstream = pkgs.python39Packages.callPackage ./pkgs/nfstream { };
+  ansible-compat = pkgs.callPackage ./pkgs/python-modules { };
 
   ### APPLICATION
   atlas = pkgs.callPackage ./pkgs/atlas { };
