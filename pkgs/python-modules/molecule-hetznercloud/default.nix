@@ -34,11 +34,4 @@ buildPythonPackage rec {
   ];
 
   pythonImportsCheck = [ "molecule_hetznercloud" ];
-  
-  meta = with lib; {
-    description = "Molecule Hetzner Driver allows molecule users to test Ansible code using hcloud vps";
-    homepage = "https://github.com/ansible-community/molecule-hetznercloud";
-    license = licenses.mit;
-    maintainers = with maintainers; [ heph2 ];
-  };
 }

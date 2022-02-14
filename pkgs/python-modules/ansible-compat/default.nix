@@ -60,11 +60,4 @@ buildPythonPackage rec {
     # fix test failing without our PATH
     sed -i 's/\(env={.\+}\)/\1 | os.environ/' test/test_runtime.py
   '';
-
-  meta = with lib; {
-    description = "Radically simple IT automation";
-    homepage = "https://github.com/ansible-community/ansible-compat";
-    license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ilpianista ];
-  };
 }

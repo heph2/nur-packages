@@ -49,11 +49,4 @@ buildPythonPackage rec {
   ];
 
   pythonImportsCheck = [ "molecule" ];
-
-  meta = with lib; {
-    description = "Molecule aids in the development and testing of Ansible roles";
-    homepage = "https://github.com/ansible-community/molecule";
-    maintainers = with maintainers; [ ilpianista ];
-    license = licenses.mit;
-  };
 }

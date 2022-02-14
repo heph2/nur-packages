@@ -32,11 +32,4 @@ buildPythonPackage rec {
   ];
 
   pythonImportsCheck = [ "molecule_vagrant" ];
-
-  meta = with lib; {
-    description = "Molecule Vagrant Driver allows molecule users to test Ansible code using vagrant";
-    homepage = "https://github.com/ansible-community/molecule-vagrant";
-    license = license.mit;
-    maintainers = with maintainers; [ heph2 ];
-  };
 }

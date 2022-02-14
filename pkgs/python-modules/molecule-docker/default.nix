@@ -28,11 +28,4 @@ buildPythonPackage rec {
   ];
 
   pythonImportsCheck = [ "molecule_docker" ];
-
-  meta = {
-    description = "Molecule Docker Driver allows molecule users to test Ansible code using docker containers";
-    homepage = "https://github.com/ansible-community/molecule-docker";
-    maintainers = with lib.maintainers; [ ilpianista ];
-    license = lib.licenses.mit;
-  };
 }
