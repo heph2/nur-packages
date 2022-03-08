@@ -8,6 +8,8 @@
 , ncurses
 , autoreconfHook
 , buildPackages
+, makeDesktopItem
+, copyDesktopItems
 }:
 
 stdenv.mkDerivation rec {
@@ -25,6 +27,7 @@ stdenv.mkDerivation rec {
     autoreconfHook
     pkg-config
     bison
+    copyDesktopItems
   ];
 
   buildInputs = [
@@ -35,6 +38,18 @@ stdenv.mkDerivation rec {
 
   configureFlags = [
     "HOSTCC=${buildPackages.stdenv.cc}/bin/${buildPackages.stdenv.cc.targetPrefix}cc"
+  ];
+
+  desktopItems = [
+    (makeDesktopItem {
+      name = "Telescope";
+      exec = "${pname}";
+      icon = "com.omarpolo.Telescope";
+      desktopName = "Telescope";
+      terminal = true;
+      categories = "Network";
+      comment = "Multi-protocol browser for the small internet";
+    })
   ];
 
   meta = with lib; {
