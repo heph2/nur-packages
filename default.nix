@@ -18,7 +18,7 @@
   ansible-compat = pkgs.callPackage ./pkgs/python-modules/ansible-compat { };
   molecule = pkgs.callPackage ./pkgs/python-modules/molecule { };
   molecule-docker = pkgs.callPackage ./pkgs/python-modules/molecule-docker { };
-  molecule-hetznercloud = pkgs.callPackage ./pkgs/python-modules/module-hetznercloud { };
+  molecule-hetznercloud = pkgs.callPackage ./pkgs/python-modules/molecule-hetznercloud { };
   molecule-vagrant = pkgs.callPackage ./pkgs/python-modules/module-vagrant { };
 
   ### APPLICATION
