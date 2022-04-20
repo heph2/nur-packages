@@ -58,5 +58,6 @@ stdenv.mkDerivation rec {
     license = licenses.isc;
     maintainers = with maintainers; [ heph2 ];
     platforms = platforms.unix;
+    broken = true;
   };
 }
