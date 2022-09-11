@@ -26,4 +26,5 @@
   ariel-dl = pkgs.callPackage ./pkgs/ariel-dl { };
   logisim-evolution = pkgs.callPackage ./pkgs/logisim-evolution { };
   telescope = pkgs.callPackage ./pkgs/telescope { };
+  ndpi = pkgs.callPackage ./pkgs/ndpi { };
 }
